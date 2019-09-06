@@ -3,6 +3,7 @@ Web application for organizing home items, such as cleaning supplies, bathroom e
 
 ## Getting Started
 ### Directory Structure
+- `frontend` contains React app
 - `backend` contains all django related files
 - `config` contains the django project (run manage.py commands from here)
 - `snm_app` contains the backend django application
