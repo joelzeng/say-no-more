@@ -9,3 +9,4 @@ Web application for organizing home items, such as cleaning supplies, bathroom e
 
 ### Local Dev
 - run `python manage.py runserver` inside the `backend` directory
+- hit `localhost:8000`
