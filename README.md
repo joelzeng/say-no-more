@@ -4,7 +4,7 @@ Web application for organizing home items, such as cleaning supplies, bathroom e
 ## Getting Started
 ### Directory Structure
 - `backend` contains all django related files
-- `config` contains the django project <-- run manage.py commands from here
+- `config` contains the django project (run manage.py commands from here)
 - `snm_app` contains the backend django application
 
 ### Local Dev
