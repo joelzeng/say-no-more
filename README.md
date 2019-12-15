@@ -11,8 +11,8 @@ Web application
 ### Local Dev
 
 #### Starting BE App
-- `. virtualenv/bin/activate`
 - `cd backend`
+- `. venv/bin/activate`
 - `python manage.py runserver`
 - hit `localhost:8000`
 
