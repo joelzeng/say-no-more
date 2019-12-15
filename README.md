@@ -11,12 +11,9 @@ Web application
 ### Local Dev
 
 #### Starting BE App
-- `cd backend`
-- `. virtualenv/bin/activate`
-- `python manage.py runserver`
+- run `. virtualenv/bin/activate && cd backend && python manage.py runserver`
 - hit `localhost:8000`
 
 #### Starting FE App
-- `cd frontend`
-- `npm start`
+- `cd frontend && npm start`
 - hit `localhost:3000`
