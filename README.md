@@ -1,5 +1,5 @@
 # Say No More
-Web application for organizing home items, such as cleaning supplies, bathroom essentials and cooking items
+Web application
 
 ## Getting Started
 ### Directory Structure
@@ -9,5 +9,11 @@ Web application for organizing home items, such as cleaning supplies, bathroom e
 - `snm_app` contains the backend django application
 
 ### Local Dev
-- run `python manage.py runserver` inside the `backend` directory
+
+#### Starting BE App
+- run `. virtualenv/bin/activate && cd backend && python manage.py runserver`
 - hit `localhost:8000`
+
+#### Starting FE App
+- `cd frontend && npm start`
+- hit `localhost:3000`
