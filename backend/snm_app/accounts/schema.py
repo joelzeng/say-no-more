@@ -1,4 +1,5 @@
 import graphene
+from graphql import GraphQLError
 from django.contrib.auth import get_user_model
 from graphene_django import DjangoObjectType
 from snm_app.users.schema import UserType
@@ -27,20 +28,19 @@ class CreateAccount(graphene.Mutation):
 		balance = graphene.Int()
 
 	def mutate(self, info, name, balance):
-		if not info.context.user.is_authenticated:
-			return CreateAccount(
-				errors=json.dumps("user not authenticated")
-			)
+		user = info.context.user
+		if user.is_anonymous:
+			raise GraphQLError("You must be logged in")
 		account = Account(
 			name=name,
 			balance=balance,
-			user=info.context.user
+			user=user
 		)
 		account.save()
 		return CreateAccount(
 			name=account.name,
 			balance=account.balance,
-			user=info.context.user
+			user=user
 		)
 
 

@@ -1,4 +1,5 @@
 import graphene
+from graphql import GraphQLError
 from django.contrib.auth import get_user_model
 from graphene_django import DjangoObjectType
 
@@ -36,7 +37,7 @@ class Query(graphene.ObjectType):
 	def resolve_me(self, info):
 		user = info.context.user
 		if user.is_anonymous:
-			raise Exception('Not logged in')
+			raise GraphQLError("You must be logged in")
 		return user
 
 
