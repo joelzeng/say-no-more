@@ -39,7 +39,7 @@ class CreateAccount(graphene.Mutation):
 		account.save()
 		return CreateAccount(
 			name=account.name,
-			balance=balance.name,
+			balance=account.balance,
 			user=info.context.user
 		)
 
