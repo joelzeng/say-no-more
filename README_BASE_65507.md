@@ -10,14 +10,12 @@ Web application
 
 ### Local Dev
 
-#### BE App
+#### Starting BE App
 - `cd backend`
 - `. venv/bin/activate`
 - `python manage.py runserver`
-- `python manage.py loaddata db.json`
 - hit `localhost:8000`
-- saving db dump: `python manage.py dumpdata > db.json`
 
-#### FE App
+#### Starting FE App
 - `cd frontend && npm start`
 - hit `localhost:3000`

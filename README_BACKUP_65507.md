@@ -18,6 +18,12 @@ Web application
 - hit `localhost:8000`
 - saving db dump: `python manage.py dumpdata > db.json`
 
+<<<<<<< HEAD
+- saving db dump: `python manage.py dumpdata > db.json`
+
+#### Starting FE App
+=======
 #### FE App
+>>>>>>> develop
 - `cd frontend && npm start`
 - hit `localhost:3000`
