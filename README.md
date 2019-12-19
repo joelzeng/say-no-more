@@ -20,4 +20,4 @@ Web application
 
 #### FE App
 - `cd frontend && npm start`
-- hit `localhost:3000`
+- hit `localhost:3000`.
